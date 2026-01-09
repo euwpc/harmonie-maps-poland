@@ -61,7 +61,7 @@ download_url = (
     "producer=harmonie_scandinavia_surface&"
     "param=temperature,Dewpoint,Pressure,CAPE,WindGust,Precipitation1h&"
     "format=netcdf&"
-    "bbox=11.4,48.5,26.7,57.9&"
+    "bbox=11.4,48.8,26.7,57.0&"
     "projection=EPSG:4326"
 )
 response = requests.get(download_url, timeout=300)
@@ -100,7 +100,7 @@ def get_analysis(var):
 
 # --- Step 6: Baltic Region view ---
 views = {
-    'central': {'extent': [11.4, 26.7, 48.5, 57.9], 'suffix': ''}
+    'central': {'extent': [11.4, 26.7, 48.8, 57.0], 'suffix': ''}
 }
 
 variables = {
